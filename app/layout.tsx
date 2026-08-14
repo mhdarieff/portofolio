@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-// 1. Impor komponen SmoothScroll di sini
-import SmoothScroll from "@/components/SmoothScroll"; 
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    // Perhatikan class "scroll-smooth" di bawah ini. Inilah senjata rahasianya!
     <html lang="id" className="scroll-smooth">
       <body className={inter.className}>
-        {/* 2. Bungkus children dengan SmoothScroll */}
-        <SmoothScroll>
-          {children}
-        </SmoothScroll>
+        {children}
       </body>
     </html>
   );
