@@ -15,7 +15,6 @@ export default function Home() {
       <Navbar />
       <main className="max-w-5xl mx-auto">
         <Hero />
-        <h1>ini contoh kode</h1>
         
         <FadeIn delay={100}><About /></FadeIn>
         
