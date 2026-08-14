@@ -12,6 +12,7 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
         smoothWheel: true, 
       }}
     >
+      {/* @ts-ignore */}
       {children}
     </ReactLenis>
   );
