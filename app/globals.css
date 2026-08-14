@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-poppins), sans-serif;
+}
+
+/* Mengaktifkan Dark Mode berbasis klik (class) */
+@variant dark (&:where(.dark, .dark *));
