@@ -7,12 +7,12 @@ export default function Hero() {
       {/* KONTENER FOTO PROFIL BUBBLE */}
       <div className="relative w-56 h-56 md:w-64 md:h-64 mb-8 animate-blob overflow-hidden border-4 border-[#D4A373] shadow-xl hover:scale-105 transition-transform duration-500">
         <Image 
-          src="/foto-profilmu.jpg" /* Ganti dengan nama file fotomu yang ada di folder public */
-          alt="Muhammad Arief"
-          fill
-          className="object-cover"
-          priority
-        />
+  src="/arief-baru.jpg" // <-- Sesuaikan dengan nama foto barumu
+  alt="Muhammad Arief"
+  fill
+  className="object-cover"
+  priority
+/>
       </div>
 
       {/* Teks Perkenalan di Bawah Foto */}
