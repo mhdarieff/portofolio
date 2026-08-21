@@ -13,7 +13,7 @@ export default function TechStack() {
           <h3 className="text-lg font-bold text-slate-800 dark:text-slate-100 mb-4 transition-colors">Machine Learning</h3>
           <ul className="space-y-2 text-slate-600 dark:text-slate-300 font-medium transition-colors">
             <li>Python</li>
-            <li>Support Vector Machine (SVM)</li>
+            <li>Support Vector Machine </li>
             <li>Random Forest</li>
             <li>Data Classification</li>
           </ul>
@@ -37,6 +37,7 @@ export default function TechStack() {
             <li>Git & GitHub</li>
             <li>UML & Flowchart Design</li>
             <li>Hardware Optimization</li>
+            ,<li>Vercel</li>
           </ul>
         </div>
 

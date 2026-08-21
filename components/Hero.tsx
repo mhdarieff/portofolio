@@ -5,10 +5,11 @@ export default function Hero() {
     // Hapus "items-center" dan ganti jadi rata kiri ("items-start")
     <section className="pt-24 pb-16 px-6 md:px-0 flex flex-col items-start text-left">
       
-      {/* 1. Foto Profil Kecil ala Rinaldi */}
-      <div className="relative w-20 h-20 md:w-24 md:h-24 mb-6 overflow-hidden rounded-full border border-slate-200 dark:border-slate-800 grayscale hover:grayscale-0 transition-all duration-500">
+{/* 1. Foto Profil (Warna Asli) */}
+      {/* Hapus kata "grayscale" dan "hover:grayscale-0" di sini */}
+      <div className="relative w-20 h-20 md:w-24 md:h-24 mb-6 overflow-hidden rounded-full border border-slate-200 dark:border-slate-800 transition-all duration-500">
         <Image 
-          src="/arief-baru.jpg" /* <-- Ganti dengan nama file foto aslimu */
+          src="/arief-baru.jpg" /* <-- Pastikan nama ini sudah sesuai dengan fotomu */
           alt="Muhammad Arief"
           fill
           className="object-cover"
