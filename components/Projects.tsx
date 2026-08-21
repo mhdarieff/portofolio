@@ -1,36 +1,54 @@
 export default function Projects() {
   return (
-    <section id="projects" className="py-16">
-      <h2 className="text-3xl font-bold mb-10 text-slate-800 dark:text-slate-100 border-b-2 border-[#E5D5B5] inline-block pb-2 transition-colors">
-        Proyek
+    <section id="projects" className="py-20 bg-slate-50 dark:bg-slate-900/50">
+      <h2 className="text-4xl font-bold mb-12 text-slate-800 dark:text-slate-100 text-center">
+        Proyek & Riset
       </h2>
       
-      <div className="bg-white dark:bg-neutral-900 p-6 md:p-8 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-all duration-300 hover:border-[#E5D5B5] dark:hover:border-[#E5D5B5]">
-        
-        <div className="flex flex-col md:flex-row md:items-start justify-between mb-4">
-          <h3 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-100 max-w-2xl leading-tight">
-            Model Machine Learning untuk Klasifikasi Penyakit Mata, <span className="font-medium text-lg block md:inline text-slate-500 dark:text-slate-400 mt-1 md:mt-0">Proyek Tugas Akhir</span>
-          </h3>
-          <span className="text-sm font-semibold text-[#D4A373] dark:text-[#E5D5B5] mt-3 md:mt-1 whitespace-nowrap">
-            2025 – 2026
-          </span>
-        </div>
+      <div className="max-w-4xl mx-auto px-6 md:px-0">
+        {/* Kartu Proyek Skripsi */}
+        <div className="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition-shadow">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+            <h3 className="text-2xl font-bold text-slate-800 dark:text-slate-100">
+              Model Machine Learning untuk Klasifikasi Penyakit Mata
+            </h3>
+            <span className="text-sm font-semibold text-slate-500 dark:text-slate-400 mt-2 md:mt-0">
+              2025 – 2026
+            </span>
+          </div>
+          
+          <p className="text-sm text-blue-600 dark:text-blue-400 font-medium mb-6">
+            Proyek Skripsi Akademik (Rumah Sakit PIM)
+          </p>
 
-        {/* Tag Teknologi */}
-        <div className="flex flex-wrap gap-2 mb-6">
-          <span className="bg-[#E5D5B5]/20 dark:bg-[#E5D5B5]/10 text-slate-700 dark:text-[#E5D5B5] text-sm px-3 py-1 rounded-full font-medium transition-colors">Python</span>
-          <span className="bg-[#E5D5B5]/20 dark:bg-[#E5D5B5]/10 text-slate-700 dark:text-[#E5D5B5] text-sm px-3 py-1 rounded-full font-medium transition-colors">Scikit-learn</span>
-          <span className="bg-[#E5D5B5]/20 dark:bg-[#E5D5B5]/10 text-slate-700 dark:text-[#E5D5B5] text-sm px-3 py-1 rounded-full font-medium transition-colors">Data Classification</span>
-        </div>
-        
-        <ul className="space-y-3 text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed list-outside ml-4 md:ml-0" style={{ listStyleType: "disc" }}>
-          <li>Mengembangkan sistem klasifikasi <i>machine learning</i> untuk mengkategorikan pasien penyakit mata menggunakan dataset medis dari Rumah Sakit PIM.</li>
-          <li>Mengimplementasikan dan membandingkan dua algoritma - Support Vector Machine (SVM) dan Modified Balanced Random Forest (MBRF) - untuk menentukan model klasifikasi yang paling akurat.</li>
-          <li><strong>MBRF mengungguli SVM dengan rata-rata akurasi 85% berbanding 82,3%</strong>, menjadikan MBRF sebagai model yang lebih efektif untuk dataset ini.</li>
-          <li>Merancang dokumentasi sistem yang komprehensif, mencakup <i>flowchart</i> dan diagram aktivitas (activity diagrams) untuk proses <i>User</i> maupun <i>Admin</i>.</li>
-          <li>Dibangun menggunakan bahasa pemrograman Python dengan pustaka scikit-learn untuk pelatihan dan evaluasi model.</li>
-        </ul>
+          <div className="mb-6">
+            <ul className="list-disc list-outside ml-5 text-slate-600 dark:text-slate-300 space-y-3 leading-relaxed">
+              <li>
+                Mengembangkan sistem klasifikasi <em>machine learning</em> untuk mengategorikan pasien penyakit mata menggunakan <em>dataset</em> medis dari Rumah Sakit PIM.
+              </li>
+              <li>
+                Menerapkan dan membandingkan dua algoritma—<strong>Support Vector Machine (SVM)</strong> dan <strong>Modified Balanced Random Forest (MBRF)</strong>—untuk menentukan model klasifikasi yang paling akurat.
+              </li>
+              <li>
+                MBRF mengungguli SVM dengan rata-rata akurasi <strong>85% berbanding 82.3%</strong>, membuktikan bahwa MBRF adalah model yang lebih efektif untuk <em>dataset</em> ini.
+              </li>
+              <li>
+                Merancang dokumentasi sistem secara komprehensif, termasuk pembuatan <em>flowchart</em> dan <em>activity diagram</em> untuk proses Pengguna (User) maupun Admin.
+              </li>
+              <li>
+                Dibangun menggunakan bahasa pemrograman <strong>Python</strong> dengan <em>library</em> <strong>scikit-learn</strong> untuk proses pelatihan (<em>training</em>) dan evaluasi model.
+              </li>
+            </ul>
+          </div>
 
+          {/* Tag Keahlian */}
+          <div className="flex flex-wrap gap-2 mt-8">
+            <span className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-full text-sm font-medium">Python</span>
+            <span className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-full text-sm font-medium">Scikit-learn</span>
+            <span className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-full text-sm font-medium">Machine Learning</span>
+            <span className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-full text-sm font-medium">System Documentation</span>
+          </div>
+        </div>
       </div>
     </section>
   );
