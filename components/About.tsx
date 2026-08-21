@@ -5,8 +5,8 @@ export default function About() {
         Tentang Saya
       </h2>
       
-      {/* mx-auto mengembalikan teks ke tengah layar, text-center menengahkan tulisan */}
-      <div className="max-w-3xl mx-auto text-center text-base text-slate-600 dark:text-slate-400 leading-relaxed space-y-5">
+      {/* mx-auto dan pembatasan lebar dihapus, diganti w-full agar sejajar dengan judul */}
+      <div className="w-full text-center text-base text-slate-600 dark:text-slate-400 leading-relaxed space-y-5">
         <p>
           Halo! Saya Muhammad Arief, seorang lulusan Teknik Informatika dari Universitas Malikussaleh. Saya memiliki ketertarikan besar pada eksplorasi data, pengembangan <em>machine learning</em>, dan penyelesaian masalah berbasis teknologi.
         </p>
