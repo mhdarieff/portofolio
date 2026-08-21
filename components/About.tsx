@@ -1,11 +1,15 @@
 export default function About() {
   return (
-    <section id="about" className="py-20">
-      <h2 className="text-4xl font-bold mb-8 text-slate-800 dark:text-slate-100 text-center">
+    // 1. py-20 dikurangi jadi py-12, ditambahkan text-left agar rata kiri
+    <section id="about" className="py-12 px-6 md:px-0 flex flex-col items-start text-left border-t border-slate-100 dark:border-slate-800">
+      
+      {/* 2. Ukuran judul dipangkas dari 4xl menjadi 2xl */}
+      <h2 className="text-xl md:text-2xl font-bold mb-6 text-slate-900 dark:text-slate-100">
         Tentang Saya
       </h2>
       
-      <div className="max-w-3xl mx-auto text-lg text-slate-600 dark:text-slate-300 leading-relaxed space-y-6 px-6 md:px-0 text-justify md:text-center">
+      {/* 3. Ukuran teks dikembalikan ke standar (text-base), mx-auto dihapus agar merapat ke kiri */}
+      <div className="max-w-3xl text-base text-slate-600 dark:text-slate-400 leading-relaxed space-y-5">
         <p>
           Halo! Saya Muhammad Arief, seorang lulusan Teknik Informatika dari Universitas Malikussaleh. Saya memiliki ketertarikan besar pada eksplorasi data, pengembangan <em>machine learning</em>, dan penyelesaian masalah berbasis teknologi.
         </p>

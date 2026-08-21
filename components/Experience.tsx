@@ -1,39 +1,32 @@
 export default function Experience() {
   return (
-    <section id="experience" className="py-16">
-      <h2 className="text-3xl font-bold mb-10 text-slate-800 dark:text-slate-100 border-b-2 border-[#E5D5B5] inline-block pb-2 transition-colors">
+    <section id="experience" className="py-12 px-6 md:px-0 border-t border-slate-100 dark:border-slate-800">
+      <h2 className="text-xl md:text-2xl font-bold mb-6 text-slate-900 dark:text-slate-100 text-left">
         Pengalaman
       </h2>
       
-      <div className="relative border-l-2 border-[#E5D5B5] ml-4 md:ml-6">
-        
-        <div className="ml-8 relative group">
-          {/* Titik Timeline */}
-          <span className="absolute -left-[41px] top-1 flex h-5 w-5 items-center justify-center rounded-full bg-[#FAFAFA] dark:bg-neutral-950 border-4 border-[#E5D5B5] group-hover:scale-125 transition-transform duration-300"></span>
-          
-          <div className="bg-white dark:bg-neutral-900 p-6 md:p-8 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-all duration-300 hover:border-[#E5D5B5] dark:hover:border-[#E5D5B5]">
-            <div className="flex flex-col md:flex-row md:items-start justify-between mb-2">
-              <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100">
-                Asisten Laboratorium Teknik Informatika
-              </h3>
-              <span className="text-sm font-semibold text-[#D4A373] dark:text-[#E5D5B5] mt-1 md:mt-0 whitespace-nowrap">
-                2024 – 2025
-              </span>
-            </div>
-            
-            <h4 className="text-md font-medium text-slate-500 dark:text-slate-400 mb-6">
-              Universitas Malikussaleh
-            </h4>
-            
-            <ul className="space-y-3 text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed list-outside ml-4 md:ml-0" style={{ listStyleType: "disc" }}>
-              <li>Membimbing mahasiswa dalam memahami konsep pemrograman, perancangan sistem, dan penggunaan perangkat lunak selama sesi praktikum laboratorium.</li>
-              <li>Melakukan pemeliharaan perangkat keras (hardware) rutin dan pemecahan masalah (troubleshooting) sistem untuk memastikan performa laboratorium yang optimal.</li>
-              <li>Berkolaborasi dengan manajemen laboratorium untuk menjaga lingkungan akademik yang produktif dan berfungsi dengan baik.</li>
-              <li>Mendukung instalasi dan konfigurasi perangkat lunak yang digunakan di berbagai mata kuliah.</li>
-            </ul>
+      <div className="max-w-4xl">
+        <div className="bg-transparent p-6 md:p-8 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition-colors">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+            <h3 className="text-lg md:text-xl font-bold text-slate-900 dark:text-slate-100">
+              Asisten Teknis Laboratorium Informatika
+            </h3>
+            <span className="text-sm font-medium text-slate-500 dark:text-slate-400 mt-2 md:mt-0">
+              2024 – 2025
+            </span>
           </div>
-        </div>
+          
+          <p className="text-slate-700 dark:text-slate-300 font-medium mb-4">
+            Universitas Malikussaleh
+          </p>
 
+          <ul className="list-disc list-outside ml-5 text-slate-600 dark:text-slate-400 space-y-2 text-sm md:text-base leading-relaxed">
+            <li>Membantu mahasiswa dalam memahami konsep pemrograman, perancangan sistem, dan penggunaan perangkat lunak selama sesi praktikum.</li>
+            <li>Melakukan pemeliharaan perangkat keras (<em>hardware</em>) secara rutin dan <em>troubleshooting</em> sistem untuk memastikan kinerja optimal.</li>
+            <li>Berkolaborasi dengan manajemen laboratorium untuk menjaga lingkungan akademik yang produktif.</li>
+            <li>Mendukung proses instalasi dan konfigurasi perangkat lunak lintas mata kuliah.</li>
+          </ul>
+        </div>
       </div>
     </section>
   );

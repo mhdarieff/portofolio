@@ -8,7 +8,7 @@ export default function Hero() {
       {/* 1. Foto Profil Kecil ala Rinaldi */}
       <div className="relative w-20 h-20 md:w-24 md:h-24 mb-6 overflow-hidden rounded-full border border-slate-200 dark:border-slate-800 grayscale hover:grayscale-0 transition-all duration-500">
         <Image 
-          src="/profil.jpg" /* <-- Ganti dengan nama file foto aslimu */
+          src="/arief-baru.jpg" /* <-- Ganti dengan nama file foto aslimu */
           alt="Muhammad Arief"
           fill
           className="object-cover"

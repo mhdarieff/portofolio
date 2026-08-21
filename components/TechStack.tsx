@@ -3,7 +3,7 @@ export default function TechStack() {
     <section id="techstack" className="py-16">
       {/* Warna judul disesuaikan untuk dark mode */}
       <h2 className="text-3xl font-bold mb-8 text-slate-800 dark:text-slate-100 border-b-2 border-[#E5D5B5] inline-block pb-2 transition-colors">
-        Tech Stack
+        Keahlian
       </h2>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
