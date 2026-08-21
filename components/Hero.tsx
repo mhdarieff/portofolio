@@ -2,45 +2,37 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section id="home" className="py-20 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+    <section className="flex flex-col items-center justify-center pt-16 pb-20 px-6">
       
-      <div className="flex-1 text-center md:text-left">
-        {/* Class animate-pulse sudah dihilangkan dari baris di bawah ini */}
-        <h1 className="text-5xl font-bold mb-6 text-slate-800 dark:text-slate-100 transition-colors">
-          Halo, Saya <span className="text-[#D4A373]">Muhammad Arief</span>
-        </h1>
-        <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 max-w-xl leading-relaxed mx-auto md:mx-0 transition-colors">
-          Lulusan Teknik Informatika yang memiliki ketertarikan mendalam pada pengembangan Web dan implementasi Machine Learning. 
-        </p>
-        
-        <div className="flex flex-wrap justify-center md:justify-start gap-4">
-          <a href="#contact" className="inline-block bg-[#E5D5B5] text-slate-900 px-7 py-3 rounded-md font-semibold transition-all duration-300 hover:bg-[#d5c29d] hover:scale-105 hover:shadow-lg hover:-translate-y-1">
-            Mari Berkolaborasi
-          </a>
-          
-          <a 
-            href="/CV_Muhammad_Arief.pdf" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="inline-block border-2 border-[#E5D5B5] text-slate-800 dark:text-[#E5D5B5] px-7 py-3 rounded-md font-semibold transition-all duration-300 hover:bg-[#E5D5B5] hover:text-slate-900 dark:hover:text-slate-900 hover:scale-105 hover:shadow-lg hover:-translate-y-1"
-          >
-            Lihat CV
-          </a>
-        </div>
+      {/* KONTENER FOTO PROFIL BUBBLE */}
+      <div className="relative w-56 h-56 md:w-64 md:h-64 mb-8 animate-blob overflow-hidden border-4 border-[#D4A373] shadow-xl hover:scale-105 transition-transform duration-500">
+        <Image 
+          src="/foto-profilmu.jpg" /* Ganti dengan nama file fotomu yang ada di folder public */
+          alt="Muhammad Arief"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
-      <div className="flex-1 flex justify-center md:justify-end">
-        <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white dark:border-neutral-900 shadow-2xl hover:-translate-y-2 transition-all duration-500 ring-4 ring-[#E5D5B5]">
-          <Image
-            src="/profil.jpg" 
-            alt="Foto Profil Muhammad Arief"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
+      {/* Teks Perkenalan di Bawah Foto */}
+      <h1 className="text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-slate-100 mb-4 text-center">
+        Muhammad Arief
+      </h1>
+      <h2 className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-8 text-center font-medium">
+        Tech Enthusiast | System Analyst
+      </h2>
+      
+      {/* Tombol CTA */}
+      <div className="flex gap-4">
+        <a href="#contact" className="px-6 py-3 bg-slate-900 dark:bg-[#E5D5B5] text-white dark:text-slate-900 rounded-full font-semibold hover:bg-slate-800 dark:hover:bg-white transition-colors">
+          Hubungi Saya
+        </a>
+        <a href="/cv-arief.pdf" target="_blank" className="px-6 py-3 border border-slate-300 dark:border-slate-700 rounded-full font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors text-slate-700 dark:text-slate-300">
+          Unduh CV
+        </a>
       </div>
-
+      
     </section>
   );
 }

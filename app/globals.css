@@ -6,3 +6,21 @@
 
 /* Mengaktifkan Dark Mode berbasis klik (class) */
 @variant dark (&:where(.dark, .dark *));
+
+/* Tambahkan kode ini di baris paling bawah globals.css */
+@keyframes blob-morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.animate-blob {
+  animation: blob-morph 8s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}

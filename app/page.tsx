@@ -11,7 +11,8 @@ import FadeIn from "@/components/FadeIn";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FAFAFA] dark:bg-neutral-950 text-slate-800 dark:text-slate-100 font-sans p-8 md:p-16 selection:bg-[#E5D5B5] selection:text-slate-900 transition-colors duration-500 overflow-x-hidden">
+    // p-8 diubah jadi px-6 pt-6, lalu md:p-16 diubah jadi md:px-16 md:pt-8
+    <div className="min-h-screen bg-[#FAFAFA] dark:bg-neutral-950 text-slate-800 dark:text-slate-100 font-sans px-6 pt-6 md:px-16 md:pt-8 pb-16 selection:bg-[#E5D5B5] selection:text-slate-900 transition-colors duration-500 overflow-x-hidden">
       <Navbar />
       <main className="max-w-5xl mx-auto">
         <Hero />

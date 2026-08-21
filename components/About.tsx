@@ -7,10 +7,13 @@ export default function About() {
       
       <div className="max-w-3xl mx-auto text-lg text-slate-600 dark:text-slate-300 leading-relaxed space-y-6 px-6 md:px-0 text-justify md:text-center">
         <p>
-          Lulusan Teknik Informatika dari Universitas Malikussaleh dengan pengalaman akademik dalam pengembangan <em>machine learning</em> dan dukungan laboratorium IT. Telah menyelesaikan proyek skripsi mengenai klasifikasi penyakit mata menggunakan algoritma SVM dan <em>Modified Balanced Random Forest</em> (MBRF).
+          Halo! Saya Muhammad Arief, seorang lulusan Teknik Informatika dari Universitas Malikussaleh. Saya memiliki ketertarikan besar pada eksplorasi data, pengembangan <em>machine learning</em>, dan penyelesaian masalah berbasis teknologi.
         </p>
         <p>
-          Memiliki beberapa sertifikasi di bidang teknologi informasi. Sebagai seorang pembelajar cepat dengan kemampuan analitis yang kuat dan teliti terhadap detail, saya sangat antusias untuk berkontribusi dan berkembang melalui kesempatan magang (<em>internship</em>).
+          Selama menempuh pendidikan, saya aktif mendukung kegiatan akademik sebagai Asisten Laboratorium IT dan baru saja merampungkan riset akhir mengenai sistem klasifikasi penyakit mata menggunakan algoritma SVM dan <em>Modified Balanced Random Forest</em> (MBRF). Pengalaman ini melatih saya untuk berpikir analitis, bekerja dengan teliti, dan menerjemahkan logika sistem yang rumit menjadi solusi yang terstruktur.
+        </p>
+        <p>
+          Sebagai pembelajar yang cepat dan selalu penasaran dengan inovasi teknologi, saya sangat antusias untuk membawa kemampuan teknis saya ke dunia industri yang sesungguhnya. Saat ini, saya sedang mencari peluang magang (<em>internship</em>) untuk berkontribusi langsung, berkolaborasi dalam tim, dan terus mengembangkan diri.
         </p>
       </div>
     </section>
