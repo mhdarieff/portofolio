@@ -1,12 +1,14 @@
 export default function About() {
   return (
-    <section id="about" className="py-12 px-6 md:px-0 border-t border-slate-100 dark:border-slate-800">
-      <h2 className="text-xl md:text-2xl font-bold mb-6 text-slate-900 dark:text-slate-100 text-left">
+    <section id="about" className="py-16 border-b border-slate-200 dark:border-slate-800">
+      
+      {/* Sub Judul: Di atas dan di tengah layar */}
+      <h2 className="text-sm font-bold tracking-widest uppercase text-slate-500 dark:text-slate-400 text-center mb-8">
         Tentang Saya
       </h2>
       
-      {/* mx-auto dan pembatasan lebar dihapus, diganti w-full agar sejajar dengan judul */}
-      <div className="w-full text-center text-base text-slate-600 dark:text-slate-400 leading-relaxed space-y-5">
+      {/* Isi Teks: Berada di bawah judul, dibungkus agar ada di tengah (mx-auto) dan teksnya rata tengah (text-center) */}
+      <div className="max-w-3xl mx-auto text-base text-slate-700 dark:text-slate-300 leading-relaxed space-y-4 text-center">
         <p>
           Halo! Saya Muhammad Arief, seorang lulusan Teknik Informatika dari Universitas Malikussaleh. Saya memiliki ketertarikan besar pada eksplorasi data, pengembangan <em>machine learning</em>, dan penyelesaian masalah berbasis teknologi.
         </p>
@@ -17,6 +19,7 @@ export default function About() {
           Sebagai pembelajar yang cepat, saya sangat antusias untuk membawa kemampuan teknis saya ke dunia industri yang sesungguhnya. Saat ini, saya sedang mencari peluang magang (<em>internship</em>) untuk berkontribusi dan berkolaborasi dalam tim.
         </p>
       </div>
+      
     </section>
   );
 }

@@ -32,7 +32,7 @@ export default function Hero() {
         <a href="#contact" className="px-5 py-2.5 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 rounded-md font-medium hover:bg-slate-800 dark:hover:bg-slate-200 transition-colors text-sm">
           Hubungi Saya
         </a>
-        <a href="/cv-arief.pdf" target="_blank" className="px-5 py-2.5 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 rounded-md font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors text-sm">
+        <a href="/CV_Muhammad_Arief.pdf" target="_blank" className="px-5 py-2.5 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 rounded-md font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors text-sm">
           Unduh CV
         </a>
       </div>

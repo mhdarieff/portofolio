@@ -1,46 +1,48 @@
 export default function TechStack() {
   return (
-    <section id="techstack" className="py-16">
-      {/* Warna judul disesuaikan untuk dark mode */}
-      <h2 className="text-3xl font-bold mb-8 text-slate-800 dark:text-slate-100 border-b-2 border-[#E5D5B5] inline-block pb-2 transition-colors">
+    <section id="techstack" className="py-16 border-b border-slate-200 dark:border-slate-800">
+      
+      {/* Sub judul tetap di kiri, kecil, dan elegan sesuai desain baru */}
+      <h2 className="text-sm font-bold tracking-widest uppercase text-slate-500 dark:text-slate-400 mb-8 text-left">
         Keahlian
       </h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        {/* Kotak 1 */}
-        <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-100 dark:border-slate-700 hover:border-[#E5D5B5] dark:hover:border-[#E5D5B5] transition-all duration-300">
-          <h3 className="text-lg font-bold text-slate-800 dark:text-slate-100 mb-4 transition-colors">Machine Learning</h3>
-          <ul className="space-y-2 text-slate-600 dark:text-slate-300 font-medium transition-colors">
-            <li>Python</li>
-            <li>Support Vector Machine </li>
-            <li>Random Forest</li>
-            <li>Data Classification</li>
-          </ul>
-        </div>
+      {/* Konten dikembalikan ke gaya semula (gelembung/kotak) dan diposisikan tepat di tengah */}
+      <div className="w-full flex flex-col items-center justify-center text-center">
+        <div className="flex flex-wrap justify-center gap-3 max-w-3xl">
+          
+          {/* Bahasa & Framework */}
+          <span className="px-4 py-2 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 rounded-md text-sm font-medium border border-slate-200 dark:border-slate-700 hover:scale-105 transition-transform cursor-default">
+            Python
+          </span>
+          <span className="px-4 py-2 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 rounded-md text-sm font-medium border border-slate-200 dark:border-slate-700 hover:scale-105 transition-transform cursor-default">
+            JavaScript
+          </span>
+          <span className="px-4 py-2 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 rounded-md text-sm font-medium border border-slate-200 dark:border-slate-700 hover:scale-105 transition-transform cursor-default">
+            React.js
+          </span>
+          <span className="px-4 py-2 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 rounded-md text-sm font-medium border border-slate-200 dark:border-slate-700 hover:scale-105 transition-transform cursor-default">
+            Next.js
+          </span>
+          <span className="px-4 py-2 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 rounded-md text-sm font-medium border border-slate-200 dark:border-slate-700 hover:scale-105 transition-transform cursor-default">
+            Tailwind CSS
+          </span>
+          
+          {/* Fokus Keahlian & Alat */}
+          <span className="px-4 py-2 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 rounded-md text-sm font-medium border border-slate-200 dark:border-slate-700 hover:scale-105 transition-transform cursor-default">
+            Machine Learning
+          </span>
+          <span className="px-4 py-2 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 rounded-md text-sm font-medium border border-slate-200 dark:border-slate-700 hover:scale-105 transition-transform cursor-default">
+            Scikit-learn
+          </span>
+          <span className="px-4 py-2 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 rounded-md text-sm font-medium border border-slate-200 dark:border-slate-700 hover:scale-105 transition-transform cursor-default">
+            Data Classification
+          </span>
+          <span className="px-4 py-2 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 rounded-md text-sm font-medium border border-slate-200 dark:border-slate-700 hover:scale-105 transition-transform cursor-default">
+            System Analysis
+          </span>
 
-        {/* Kotak 2 */}
-        <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-100 dark:border-slate-700 hover:border-[#E5D5B5] dark:hover:border-[#E5D5B5] transition-all duration-300">
-          <h3 className="text-lg font-bold text-slate-800 dark:text-slate-100 mb-4 transition-colors">Web Development</h3>
-          <ul className="space-y-2 text-slate-600 dark:text-slate-300 font-medium transition-colors">
-            <li>HTML & CSS</li>
-            <li>JavaScript / TypeScript</li>
-            <li>Next.js</li>
-            <li>Tailwind CSS</li>
-          </ul>
         </div>
-
-        {/* Kotak 3 */}
-        <div className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-100 dark:border-slate-700 hover:border-[#E5D5B5] dark:hover:border-[#E5D5B5] transition-all duration-300">
-          <h3 className="text-lg font-bold text-slate-800 dark:text-slate-100 mb-4 transition-colors">Tools & Sistem</h3>
-          <ul className="space-y-2 text-slate-600 dark:text-slate-300 font-medium transition-colors">
-            <li>Git & GitHub</li>
-            <li>UML & Flowchart Design</li>
-            <li>Hardware Optimization</li>
-            ,<li>Vercel</li>
-          </ul>
-        </div>
-
       </div>
     </section>
   );

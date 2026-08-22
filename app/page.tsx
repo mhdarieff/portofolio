@@ -21,7 +21,6 @@ export default function Home() {
         
         <FadeIn delay={100}><Education /></FadeIn>
 
-        {/* Sisipkan Experience di sini */}
         <FadeIn delay={100}><Experience /></FadeIn>
         
         <FadeIn delay={100}><Projects /></FadeIn>
