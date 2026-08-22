@@ -5,8 +5,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portofolio | Muhammad Arief",
+  title: "Muhammad Arief",
   description: "Portofolio Teknik Informatika",
+  icons: {
+    icon: '/arief-baru.jpg',
+  },
 };
 
 export default function RootLayout({
